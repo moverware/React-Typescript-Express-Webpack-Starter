@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "3144a6f97293d5026593";
+/******/ 	var hotCurrentHash = "222e6bd543fbd99697f1";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -2388,7 +2388,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(/*! react */ "react");
 var ReactDOM = __webpack_require__(/*! react-dom */ "react-dom");
 var Hello_1 = __webpack_require__(/*! ./components/Hello */ "./src/components/Hello.tsx");
-ReactDOM.render(React.createElement(Hello_1.Hello, { compiler: "Typescript", framework: "React", bundler: "Webpack" }), document.getElementById('root'));
+ReactDOM.render(React.createElement(Hello_1.Hello, { compiler: "Typescript", framework: "Reasdsaact", bundler: "Webpack" }), document.getElementById('root'));
 if (true) {
     module.hot.accept();
 }
@@ -2417,10 +2417,10 @@ var Hello = (function (_super) {
         return (React.createElement("h1", null,
             "This is a ",
             this.props.framework,
-            " application using ",
-            this.props.compiler,
+            " application using",
             ' ',
-            "with ",
+            this.props.compiler,
+            " with ",
             this.props.bundler));
     };
     return Hello;

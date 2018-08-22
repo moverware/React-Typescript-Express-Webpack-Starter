@@ -11,7 +11,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].bundle.js',
-        devtoolModuleFilenameTemplate: 'file:///[absolute-resource-path]'
+        devtoolModuleFilenameTemplate: 'file:///[absolute-resource-path]' //for vscode debugger
     },
     devtool: 'source-map',
     resolve: {

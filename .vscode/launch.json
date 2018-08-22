@@ -5,10 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
+            "name": "Front End Debug",
+            "type": "chrome",
             "request": "launch",
-            "name": "Launch Dev",
-            "program": "${workspaceFolder}\\server.js"
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceRoot}/src"
+        },
+        {
+            "name": "Back End Debug",
+            "type": "node",
+            "request": "attach",
+            "port": 9229
         }
     ]
 }

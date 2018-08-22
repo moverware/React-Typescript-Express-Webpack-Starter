@@ -19,20 +19,31 @@ export class Hello extends React.Component<HelloProps, HelloState> {
         }
     }
 
+    showButton = () => {
+        this.setState({ showButton: true })
+    }
+
+    hideButton = () => {
+        this.setState({ showButton: false })
+    }
+
     render() {
         const elements: React.ReactElement<any>[] = []
         if (this.state.showButton) {
             elements.push(
                 <div>
-                    <Button />
+                    <Button hideButton={this.hideButton} />
                 </div>
             )
         } else {
             elements.push(
-                <h1>
-                    This is a {this.props.framework} application using{' '}
-                    {this.props.compiler} with {this.props.bundler}
-                </h1>
+                <div>
+                    <h1>
+                        This is a {this.props.framework} application using{' '}
+                        {this.props.compiler} with {this.props.bundler}
+                    </h1>
+                    <a onClick={this.showButton}>Click me!</a>
+                </div>
             )
         }
 

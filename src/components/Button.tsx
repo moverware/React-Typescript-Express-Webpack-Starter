@@ -1,5 +1,13 @@
 import * as React from 'react'
 
-export const Button: React.StatelessComponent<{}> = () => {
-    return <h1>Button</h1>
+interface ButtonProps {
+    hideButton: () => void
+}
+
+export const Button: React.StatelessComponent<ButtonProps> = props => {
+    return (
+        <a onClick={props.hideButton}>
+            Button Stateless Component! Click to hide
+        </a>
+    )
 }

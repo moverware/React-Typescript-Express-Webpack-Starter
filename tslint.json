@@ -1,18 +1,19 @@
 {
-  "defaultSeverity": "error",
-  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
-  "jsRules": {},
-  "rules": {
-    "ordered-imports": false,
-    "semicolon": [true, "never"],
-    "object-literal-sort-keys": [false],
-    "no-console": [false],
-    "interface-name": [true, "never-prefix"],
-    "quotemark": [false],
-    "no-bitwise": false,
-    "jsx-no-bind": false,
-    "jsx-no-lambda": false,
-    "no-submodule-imports": false
-  },
-  "rulesDirectory": []
+    "defaultSeverity": "error",
+    "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+    "jsRules": {},
+    "rules": {
+        "ordered-imports": false,
+        "semicolon": [true, "never"],
+        "object-literal-sort-keys": [false],
+        "no-console": [false],
+        "interface-name": [true, "never-prefix"],
+        "quotemark": [false],
+        "no-bitwise": false,
+        "jsx-no-bind": false,
+        "jsx-no-lambda": false,
+        "no-submodule-imports": false,
+        "no-implicit-dependencies": [true, "dev"]
+    },
+    "rulesDirectory": []
 }

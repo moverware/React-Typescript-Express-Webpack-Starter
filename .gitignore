@@ -1,5 +1,3 @@
 node_modules
 dist
-backendDist
-server.js
-server.js.map
+.env

@@ -11,7 +11,7 @@ const config: webpack.Configuration = {
     output: {
         path: path.resolve(__dirname, './frontEnd'),
         filename: 'js/[name].bundle.js',
-        devtoolModuleFilenameTemplate: 'file:///[absolute-resource-path]' //for vscode debugger
+        devtoolModuleFilenameTemplate: 'file:///[absolute-resource-path]' // for vscode debugger
     },
     devtool: 'source-map',
     resolve: {

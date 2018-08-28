@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "outDir": "./",
+        "rootDir": "./",
+        "baseUrl": "."
+    },
+    "extends": "./tsconfig",
+    "include": ["**/*"],
+    "exclude": ["./src/", "node_modules"]
+}

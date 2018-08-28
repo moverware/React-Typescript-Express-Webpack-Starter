@@ -5,14 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Front End Debug",
+            "name": "Front-End Debug",
             "type": "chrome",
             "request": "launch",
             "url": "http://localhost:3000",
             "webRoot": "${workspaceRoot}/src"
         },
         {
-            "name": "Back End Debug",
+            "name": "Back-End Debug",
             "type": "node",
             "request": "attach",
             "port": 9229

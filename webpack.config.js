@@ -9,7 +9,7 @@ module.exports = {
         // vendor: ['react', 'react-dom']
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, './dist'),
         filename: 'js/[name].bundle.js',
         devtoolModuleFilenameTemplate: 'file:///[absolute-resource-path]' //for vscode debugger
     },
@@ -22,7 +22,10 @@ module.exports = {
             {
                 test: /\.(ts|tsx)$/,
                 exclude: /node_modules/,
-                loader: 'awesome-typescript-loader'
+                loader: 'awesome-typescript-loader',
+                query: {
+                    configFileName: './src/tsconfig.frontend.json'
+                }
             },
             {
                 enforce: 'pre',

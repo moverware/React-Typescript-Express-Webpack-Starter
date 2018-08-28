@@ -1,15 +1,15 @@
-const path = require('path'),
-    webpack = require('webpack'),
-    HtmlWebpackPlugin = require('html-webpack-plugin')
+import * as webpack from 'webpack'
+import * as path from 'path'
+import * as HtmlWebpackPlugin from 'html-webpack-plugin'
 
-module.exports = {
+const config: webpack.Configuration = {
     mode: 'development',
     entry: {
         app: ['./src/App.tsx', 'webpack-hot-middleware/client']
         // vendor: ['react', 'react-dom']
     },
     output: {
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, './frontEnd'),
         filename: 'js/[name].bundle.js',
         devtoolModuleFilenameTemplate: 'file:///[absolute-resource-path]' //for vscode debugger
     },
@@ -37,7 +37,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'src', 'index.html')
+            template: path.resolve(__dirname, '../src', 'index.html')
         }),
         new webpack.HotModuleReplacementPlugin()
     ],
@@ -51,3 +51,5 @@ module.exports = {
         'react-dom': 'ReactDOM'
     }
 }
+
+export default config

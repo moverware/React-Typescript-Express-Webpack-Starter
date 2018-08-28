@@ -1,8 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "./",
-        "rootDir": "./",
-        "baseUrl": "."
+        "outDir": "./dist"
     },
     "extends": "./tsconfig",
     "include": ["**/*"],

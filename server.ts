@@ -1,16 +1,17 @@
-const path = require('path'),
-    express = require('express'),
-    webpack = require('webpack'),
-    app = express(),
-    port = process.env.PORT || 3000,
-    config = require('./webpack.config')
+import * as path from 'path'
+import * as express from 'express'
+import * as webpack from 'webpack'
+import config from './webpack.config'
+
+const app = express()
+const port = process.env.PORT || 3000
 
 app.listen(port, () => {
     console.log(`App is listening on port ${port}`)
 })
 
-app.get('/', (req: any, res: any) => {
-    res.sendFile(path.resolve(__dirname, 'dist', 'index.html'))
+app.get('/', (req: express.Request, res: express.Response) => {
+    res.sendFile(path.resolve(__dirname, 'frontEnd', 'index.html'))
 })
 
 let compiler = webpack(config)

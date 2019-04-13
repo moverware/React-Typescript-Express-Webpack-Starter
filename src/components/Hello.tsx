@@ -19,16 +19,8 @@ export class Hello extends React.Component<HelloProps, HelloState> {
         }
     }
 
-    showButton = () => {
-        this.setState({ showButton: true })
-    }
-
-    hideButton = () => {
-        this.setState({ showButton: false })
-    }
-
-    render() {
-        const elements: React.ReactElement<any>[] = []
+    public render() {
+        const elements: Array<React.ReactElement<any>> = []
         if (this.state.showButton) {
             elements.push(
                 <div>
@@ -48,5 +40,13 @@ export class Hello extends React.Component<HelloProps, HelloState> {
         }
 
         return elements
+    }
+
+    private showButton = () => {
+        this.setState({ showButton: true })
+    }
+
+    private hideButton = () => {
+        this.setState({ showButton: false })
     }
 }

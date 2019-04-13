@@ -5,11 +5,11 @@
         "jsx": "react",
         "lib": ["dom", "es2017"],
         "module": "commonjs",
+        "moduleResolution": "node",
         "noImplicitAny": true,
         "target": "es5",
         "sourceMap": true,
         "removeComments": true,
-        "noStrictGenericChecks": true,
-        "plugins": [{ "name": "tslint-language-service" }]
+        "noStrictGenericChecks": true
     }
 }

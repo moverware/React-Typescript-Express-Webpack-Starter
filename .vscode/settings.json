@@ -1,5 +1,6 @@
 {
     "typescript.tsdk": "node_modules\\typescript\\lib",
     "prettier.requireConfig": true,
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "tslint.alwaysShowRuleFailuresAsWarnings": false
 }

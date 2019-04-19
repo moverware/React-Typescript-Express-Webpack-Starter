@@ -5,8 +5,8 @@ import * as HtmlWebpackPlugin from 'html-webpack-plugin'
 const config: webpack.Configuration = {
     mode: 'development',
     entry: {
-        app: ['./src/App.tsx', 'webpack-hot-middleware/client']
-        // vendor: ['react', 'react-dom']
+        app: ['./src/App.tsx', 'webpack-hot-middleware/client'],
+        vendor: ['react', 'react-dom']
     },
     output: {
         path: path.resolve(__dirname, './frontEnd'),

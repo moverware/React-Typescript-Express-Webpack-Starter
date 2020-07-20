@@ -15,12 +15,12 @@ export class Hello extends React.Component<HelloProps, HelloState> {
     constructor(props: HelloProps) {
         super(props)
         this.state = {
-            showButton: false
+            showButton: false,
         }
     }
 
     public render() {
-        const elements: Array<React.ReactElement<any>> = []
+        const elements: React.ReactElement<any>[] = []
         if (this.state.showButton) {
             elements.push(
                 <div>

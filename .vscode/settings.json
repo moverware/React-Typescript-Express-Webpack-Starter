@@ -1,6 +1,13 @@
 {
     "typescript.tsdk": "node_modules\\typescript\\lib",
-    "prettier.requireConfig": true,
     "git.ignoreLimitWarning": true,
-    "tslint.alwaysShowRuleFailuresAsWarnings": false
+    "tslint.alwaysShowRuleFailuresAsWarnings": false,
+    "editor.formatOnSave": true,
+    "prettier.requireConfig": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

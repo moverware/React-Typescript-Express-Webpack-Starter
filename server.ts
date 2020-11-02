@@ -25,7 +25,7 @@ if (dev) {
     app.use(
         webpack_dev_middleware(compiler, {
             publicPath: config.output.publicPath,
-            stats: { colors: true }
+            stats: { colors: true },
         })
     )
 

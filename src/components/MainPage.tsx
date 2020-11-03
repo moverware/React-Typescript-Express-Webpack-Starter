@@ -29,7 +29,7 @@ export class Hello extends React.Component<HelloProps, HelloState> {
                         This is a {this.props.framework} application using{' '}
                         {this.props.compiler} with {this.props.bundler}
                     </h1>
-                    <a onClick={this.showButton}>xxx me!</a>
+                    <a onClick={this.showButton}>Click me!</a>
                 </div>
             )
         }
